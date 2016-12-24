@@ -417,6 +417,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2H5U5323DL;
 				INFOPLIST_FILE = SushiGoRound/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jollyjoester.SushiGoRound;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,6 +431,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2H5U5323DL;
 				INFOPLIST_FILE = SushiGoRound/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jollyjoester.SushiGoRound;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +516,7 @@
 				184D590D1E0EF33C00345FBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		184D590E1E0EF33C00345FBA /* Build configuration list for PBXNativeTarget "SushiGoRoundTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +525,7 @@
 				184D59101E0EF33C00345FBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		184D59111E0EF33C00345FBA /* Build configuration list for PBXNativeTarget "SushiGoRoundUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +534,7 @@
 				184D59131E0EF33C00345FBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

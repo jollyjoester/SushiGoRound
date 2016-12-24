@@ -9,7 +9,7 @@ view.backgroundColor = UIColor.black
 PlaygroundPage.current.liveView = view
 
 (0...2).forEach {
-    let sushi = UILabel(frame: CGRect(x:320, y:0, width:44, height:44))
+    let sushi = UILabel(frame: CGRect(x: 320, y: 0, width: 44, height: 44))
     sushi.text = "🍣"
     
     view.addSubview(sushi)
