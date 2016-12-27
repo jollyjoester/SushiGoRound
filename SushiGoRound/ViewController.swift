@@ -27,7 +27,6 @@ class ViewController: UIViewController {
         let sushi = UILabel(frame: CGRect(x: screenWidth, y: screenHeight * rand, width: 44, height: 44))
         sushi.font = UIFont(name: "HelveticaNeue", size: 36)
         sushi.text = "🍣"
-        
         view.addSubview(sushi)
         
         UIView.animate(withDuration: 3, delay: 0, options: [.curveLinear], animations: { () -> Void in
@@ -36,12 +35,5 @@ class ViewController: UIViewController {
             sushi.removeFromSuperview()
         })
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
 }
 

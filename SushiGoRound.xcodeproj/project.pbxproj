@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18268C9C1E0F0795005147F2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18268C9B1E0F0795005147F2 /* NotificationCenter.framework */; };
+		18268C9F1E0F0795005147F2 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18268C9E1E0F0795005147F2 /* TodayViewController.swift */; };
+		18268CA21E0F0795005147F2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18268CA01E0F0795005147F2 /* MainInterface.storyboard */; };
+		18268CA61E0F0795005147F2 /* SushiGoRoundTodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 18268C991E0F0795005147F2 /* SushiGoRoundTodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		18268CB11E0F1883005147F2 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18268CB01E0F1883005147F2 /* UserNotifications.framework */; };
+		18268CB31E0F1883005147F2 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18268CB21E0F1883005147F2 /* UserNotificationsUI.framework */; };
+		18268CB61E0F1883005147F2 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18268CB51E0F1883005147F2 /* NotificationViewController.swift */; };
+		18268CB91E0F1883005147F2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18268CB71E0F1883005147F2 /* MainInterface.storyboard */; };
+		18268CBD1E0F1883005147F2 /* SushiGoRoundContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 18268CAF1E0F1883005147F2 /* SushiGoRoundContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		184D58E71E0EF33C00345FBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D58E61E0EF33C00345FBA /* AppDelegate.swift */; };
 		184D58E91E0EF33C00345FBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D58E81E0EF33C00345FBA /* ViewController.swift */; };
 		184D58EC1E0EF33C00345FBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184D58EA1E0EF33C00345FBA /* Main.storyboard */; };
@@ -17,6 +26,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		18268CA41E0F0795005147F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 184D58DB1E0EF33C00345FBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18268C981E0F0795005147F2;
+			remoteInfo = SushiGoRoundTodayExtension;
+		};
+		18268CBB1E0F1883005147F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 184D58DB1E0EF33C00345FBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18268CAE1E0F1883005147F2;
+			remoteInfo = SushiGoRoundContentExtension;
+		};
 		184D58F81E0EF33C00345FBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 184D58DB1E0EF33C00345FBA /* Project object */;
@@ -33,7 +56,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		18268CAA1E0F0795005147F2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				18268CBD1E0F1883005147F2 /* SushiGoRoundContentExtension.appex in Embed App Extensions */,
+				18268CA61E0F0795005147F2 /* SushiGoRoundTodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		18268C991E0F0795005147F2 /* SushiGoRoundTodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SushiGoRoundTodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		18268C9B1E0F0795005147F2 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		18268C9E1E0F0795005147F2 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		18268CA11E0F0795005147F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		18268CA31E0F0795005147F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18268CAF1E0F1883005147F2 /* SushiGoRoundContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SushiGoRoundContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		18268CB01E0F1883005147F2 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		18268CB21E0F1883005147F2 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		18268CB51E0F1883005147F2 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		18268CB81E0F1883005147F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		18268CBA1E0F1883005147F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18268CC11E0F1E17005147F2 /* SushiGoRoundContentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SushiGoRoundContentExtension.entitlements; sourceTree = "<group>"; };
+		18268CC21E0F1FC3005147F2 /* SushiGoRound.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SushiGoRound.entitlements; sourceTree = "<group>"; };
 		184D58E31E0EF33C00345FBA /* SushiGoRound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SushiGoRound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184D58E61E0EF33C00345FBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		184D58E81E0EF33C00345FBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +102,23 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		18268C961E0F0795005147F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18268C9C1E0F0795005147F2 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18268CAC1E0F1883005147F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18268CB31E0F1883005147F2 /* UserNotificationsUI.framework in Frameworks */,
+				18268CB11E0F1883005147F2 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		184D58E01E0EF33C00345FBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,6 +143,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18268C9A1E0F0795005147F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18268C9B1E0F0795005147F2 /* NotificationCenter.framework */,
+				18268CB01E0F1883005147F2 /* UserNotifications.framework */,
+				18268CB21E0F1883005147F2 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18268C9D1E0F0795005147F2 /* SushiGoRoundTodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				18268C9E1E0F0795005147F2 /* TodayViewController.swift */,
+				18268CA01E0F0795005147F2 /* MainInterface.storyboard */,
+				18268CA31E0F0795005147F2 /* Info.plist */,
+			);
+			path = SushiGoRoundTodayExtension;
+			sourceTree = "<group>";
+		};
+		18268CB41E0F1883005147F2 /* SushiGoRoundContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				18268CC11E0F1E17005147F2 /* SushiGoRoundContentExtension.entitlements */,
+				18268CB51E0F1883005147F2 /* NotificationViewController.swift */,
+				18268CB71E0F1883005147F2 /* MainInterface.storyboard */,
+				18268CBA1E0F1883005147F2 /* Info.plist */,
+			);
+			path = SushiGoRoundContentExtension;
+			sourceTree = "<group>";
+		};
 		184D58DA1E0EF33C00345FBA = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +181,9 @@
 				184D58E51E0EF33C00345FBA /* SushiGoRound */,
 				184D58FA1E0EF33C00345FBA /* SushiGoRoundTests */,
 				184D59051E0EF33C00345FBA /* SushiGoRoundUITests */,
+				18268C9D1E0F0795005147F2 /* SushiGoRoundTodayExtension */,
+				18268CB41E0F1883005147F2 /* SushiGoRoundContentExtension */,
+				18268C9A1E0F0795005147F2 /* Frameworks */,
 				184D58E41E0EF33C00345FBA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +194,8 @@
 				184D58E31E0EF33C00345FBA /* SushiGoRound.app */,
 				184D58F71E0EF33C00345FBA /* SushiGoRoundTests.xctest */,
 				184D59021E0EF33C00345FBA /* SushiGoRoundUITests.xctest */,
+				18268C991E0F0795005147F2 /* SushiGoRoundTodayExtension.appex */,
+				18268CAF1E0F1883005147F2 /* SushiGoRoundContentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +203,7 @@
 		184D58E51E0EF33C00345FBA /* SushiGoRound */ = {
 			isa = PBXGroup;
 			children = (
+				18268CC21E0F1FC3005147F2 /* SushiGoRound.entitlements */,
 				184D58E61E0EF33C00345FBA /* AppDelegate.swift */,
 				184D58E81E0EF33C00345FBA /* ViewController.swift */,
 				184D58EA1E0EF33C00345FBA /* Main.storyboard */,
@@ -130,6 +235,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		18268C981E0F0795005147F2 /* SushiGoRoundTodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18268CA91E0F0795005147F2 /* Build configuration list for PBXNativeTarget "SushiGoRoundTodayExtension" */;
+			buildPhases = (
+				18268C951E0F0795005147F2 /* Sources */,
+				18268C961E0F0795005147F2 /* Frameworks */,
+				18268C971E0F0795005147F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SushiGoRoundTodayExtension;
+			productName = SushiGoRoundTodayExtension;
+			productReference = 18268C991E0F0795005147F2 /* SushiGoRoundTodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		18268CAE1E0F1883005147F2 /* SushiGoRoundContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18268CC01E0F1883005147F2 /* Build configuration list for PBXNativeTarget "SushiGoRoundContentExtension" */;
+			buildPhases = (
+				18268CAB1E0F1883005147F2 /* Sources */,
+				18268CAC1E0F1883005147F2 /* Frameworks */,
+				18268CAD1E0F1883005147F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SushiGoRoundContentExtension;
+			productName = SushiGoRoundContentExtension;
+			productReference = 18268CAF1E0F1883005147F2 /* SushiGoRoundContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		184D58E21E0EF33C00345FBA /* SushiGoRound */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 184D590B1E0EF33C00345FBA /* Build configuration list for PBXNativeTarget "SushiGoRound" */;
@@ -137,10 +276,13 @@
 				184D58DF1E0EF33C00345FBA /* Sources */,
 				184D58E01E0EF33C00345FBA /* Frameworks */,
 				184D58E11E0EF33C00345FBA /* Resources */,
+				18268CAA1E0F0795005147F2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				18268CA51E0F0795005147F2 /* PBXTargetDependency */,
+				18268CBC1E0F1883005147F2 /* PBXTargetDependency */,
 			);
 			name = SushiGoRound;
 			productName = SushiGoRound;
@@ -193,10 +335,30 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = jollyjoester;
 				TargetAttributes = {
+					18268C981E0F0795005147F2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2H5U5323DL;
+						ProvisioningStyle = Automatic;
+					};
+					18268CAE1E0F1883005147F2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2H5U5323DL;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
 					184D58E21E0EF33C00345FBA = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 2H5U5323DL;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					184D58F61E0EF33C00345FBA = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -228,11 +390,29 @@
 				184D58E21E0EF33C00345FBA /* SushiGoRound */,
 				184D58F61E0EF33C00345FBA /* SushiGoRoundTests */,
 				184D59011E0EF33C00345FBA /* SushiGoRoundUITests */,
+				18268C981E0F0795005147F2 /* SushiGoRoundTodayExtension */,
+				18268CAE1E0F1883005147F2 /* SushiGoRoundContentExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		18268C971E0F0795005147F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18268CA21E0F0795005147F2 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18268CAD1E0F1883005147F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18268CB91E0F1883005147F2 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		184D58E11E0EF33C00345FBA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,6 +440,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		18268C951E0F0795005147F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18268C9F1E0F0795005147F2 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18268CAB1E0F1883005147F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18268CB61E0F1883005147F2 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		184D58DF1E0EF33C00345FBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,6 +484,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		18268CA51E0F0795005147F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18268C981E0F0795005147F2 /* SushiGoRoundTodayExtension */;
+			targetProxy = 18268CA41E0F0795005147F2 /* PBXContainerItemProxy */;
+		};
+		18268CBC1E0F1883005147F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18268CAE1E0F1883005147F2 /* SushiGoRoundContentExtension */;
+			targetProxy = 18268CBB1E0F1883005147F2 /* PBXContainerItemProxy */;
+		};
 		184D58F91E0EF33C00345FBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 184D58E21E0EF33C00345FBA /* SushiGoRound */;
@@ -301,6 +507,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		18268CA01E0F0795005147F2 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18268CA11E0F0795005147F2 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		18268CB71E0F1883005147F2 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18268CB81E0F1883005147F2 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		184D58EA1E0EF33C00345FBA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -320,6 +542,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		18268CA71E0F0795005147F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2H5U5323DL;
+				INFOPLIST_FILE = SushiGoRoundTodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jollyjoester.SushiGoRound.SushiGoRoundTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		18268CA81E0F0795005147F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2H5U5323DL;
+				INFOPLIST_FILE = SushiGoRoundTodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jollyjoester.SushiGoRound.SushiGoRoundTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		18268CBE1E0F1883005147F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SushiGoRoundContentExtension/SushiGoRoundContentExtension.entitlements;
+				DEVELOPMENT_TEAM = 2H5U5323DL;
+				INFOPLIST_FILE = SushiGoRoundContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jollyjoester.SushiGoRound.SushiGoRoundContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		18268CBF1E0F1883005147F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SushiGoRoundContentExtension/SushiGoRoundContentExtension.entitlements;
+				DEVELOPMENT_TEAM = 2H5U5323DL;
+				INFOPLIST_FILE = SushiGoRoundContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jollyjoester.SushiGoRound.SushiGoRoundContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		184D59091E0EF33C00345FBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -414,7 +692,9 @@
 		184D590C1E0EF33C00345FBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SushiGoRound/SushiGoRound.entitlements;
 				DEVELOPMENT_TEAM = 2H5U5323DL;
 				INFOPLIST_FILE = SushiGoRound/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -428,7 +708,9 @@
 		184D590D1E0EF33C00345FBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SushiGoRound/SushiGoRound.entitlements;
 				DEVELOPMENT_TEAM = 2H5U5323DL;
 				INFOPLIST_FILE = SushiGoRound/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -500,6 +782,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		18268CA91E0F0795005147F2 /* Build configuration list for PBXNativeTarget "SushiGoRoundTodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18268CA71E0F0795005147F2 /* Debug */,
+				18268CA81E0F0795005147F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18268CC01E0F1883005147F2 /* Build configuration list for PBXNativeTarget "SushiGoRoundContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18268CBE1E0F1883005147F2 /* Debug */,
+				18268CBF1E0F1883005147F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		184D58DE1E0EF33C00345FBA /* Build configuration list for PBXProject "SushiGoRound" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
